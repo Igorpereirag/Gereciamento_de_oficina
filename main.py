@@ -13,7 +13,7 @@ login=str(input("DIGITE SEU USENAME:").strip().upper())
 senha=int(input("DIGITE SUA SENHA:"))
 
 if login==l1[0] and senha==l2[0]:
-    print(f"seja bem vindo {l1[0]} seu cargo é gerente")
+    print(f"seja bem vindo {l1[0]} seu cargo é de gerente")
     #while True:
     print("""
      [1]-Gerenciar funcionários (cadastrar e deletar)
