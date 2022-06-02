@@ -1,31 +1,38 @@
 from lib.interface import*
 cabeçalho("login do sistema")
-#save.txt
 #joao, 93407073003, 123, 1
-#VARIAVEIS DE CONTROLE
-ordensservicos={}
 
 l1=["ADMIN","RECEP","MEC"]
 l2=[123456,123,456]
-listacpf=[]
-clientes=[]
+login=""
+senha=""
+r=""
 while True:
   login=str(input("\033[1;36mDIGITE SEU USENAME:\033[m").strip().upper())
-  senha=int(input("\033[1;36mDIGITE SUA SENHA:\033[m"))
+  senha=leiaInt("\033[1;36mDIGITE SUA SENHA:\033[m")
+  if login==l1[0] and senha==l2[0] or login==l1[1] and senha==l2[1] or login==l1[2] and senha==l2[2]:
+    break
+  else:
+    print("Login ou Senha incorretas tente novamente")
 
-  if login==l1[0] and senha==l2[0]:
+if login==l1[0] and senha==l2[0]:
     print(f"seja bem vindo {l1[0]} seu cargo é de gerente")
     r=menu(["Gerenciar funcionários (cadastrar e deletar)","Ver ordens de serviço (Visualizar, Marcar como concluída e deleta)"])
-    if r == 1:
+if r == 1:
       cabeçalho("Gestao dos funcionarios:")
       menu(["cadastrar funcionário","deletar funcionário"])
+      nome=str(input('digite o nome:'))
+      cpf=int(input('digite o cpf do funcionario:'))
+      senha=int(input('digite a senha:'))
+      cargo=str(input('digite o cargo:'))                
+
         
-    elif r == 2: 
+elif r == 2: 
       cabeçalho("ver ordem de serviço:")
       r=menu(["visualizar","marcar como concluída","deletar"])
     
               
-  elif login==l1[1] and senha==l2[1]:
+elif login==l1[1] and senha==l2[1]:
     print(f"seja bem vinda {l1[1]} seu cargo recepcionista ")
     #while True:
     print("""
@@ -42,7 +49,7 @@ while True:
       placadocarro=int(input("digite a placa do carro")) 
     
 
-  elif login==l1[2] and senha==l2[2]:
+elif login==l1[2] and senha==l2[2]:
     print(f"seja bem vindo {l1[2]} seu cargo é de mecanico")
     # while True:
     print('''

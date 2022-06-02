@@ -11,7 +11,7 @@ def cabeçalho(msg):
 
 
 def menu(lista):
-    cabeçalho('MENU PRINCIPAL')
+    cabeçalho('MENU')
     cont = 1
     for item in lista:
         print(f'\033[1;36m[ {cont} ]\033[m - \033[1;93m{item}\033[m')
@@ -31,7 +31,7 @@ def menu(lista):
     opção = n
     return opção
 
-
+#retona um menu numerado com um input correpondente a opção do usuario_deve ser aramazenada em uma variaval "r"
 def validanome():
     while True:
         try:
@@ -44,30 +44,6 @@ def validanome():
         else:
             break
     return nome
-
-
-def validasexo():
-    while True:
-        try:
-            sexo = str(input('Sexo: [M/F] ')).strip().upper()
-            while sexo == '':
-                print('\033[1;31mERRO! Digite um sexo válido [M ou F].\033[m')
-                sexo = str(input('Sexo: [M/F] ')).strip().upper()
-            sexo = sexo[0]
-            while sexo.isnumeric():
-                print('\033[1;31mERRO! Digite um sexo válido [M ou F].\033[m')
-                sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
-            while sexo not in 'MF':
-                print('\033[1;31mERRO! Digite um sexo válido [M ou F].\033[m')
-                sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
-        except (ValueError, TypeError):
-            print('\033[1;31mERRO! Digite uma opção válida.\033[m')
-        except KeyboardInterrupt:
-            print(
-                '\033[1;31mEntrada de dados interrompida pelo usuário.\033[m')
-        else:
-            break
-    return sexo
 
 
 def validaidade():
@@ -94,8 +70,8 @@ def leiaInt(msg):
       o = True
     else:
       print("\033[0;31mDigite um numero inteiro valido\033[m")
-      if o:
-        break
+    if o:
+      break
   return valor
 
   
