@@ -2,7 +2,6 @@
 def linha(tam=50):
     return '-' * tam
 
-
 def cabeçalho(msg):
     print(linha())
     print(f'\033[1;93m{msg.center(50)}\033[m'
@@ -11,10 +10,10 @@ def cabeçalho(msg):
 
 
 def menu(lista):
-    cabeçalho('MENU')
+    
     cont = 1
     for item in lista:
-        print(f'\033[1;36m[ {cont} ]\033[m - \033[1;93m{item}\033[m')
+        print(f'\033[1;92m[ {cont} ]\033[m - \033[1;93m{item}\033[m')
         cont += 1
     print(linha())
     while True:
