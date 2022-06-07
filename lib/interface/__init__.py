@@ -74,15 +74,21 @@ def leiaInt(msg):
   return valor
 
   
-def lerArquivo():
-    lista = []
-    arquivo = open('save.txt', 'r', encoding="utf8")
-    for line in arquivo:
-        lista.append(line)
-
-    arquivo.close()
-    for i in lista:
-        print(i)
+#def lerArquivo():
+ #   arquivo = open('save.txt', 'r', encoding="utf8")
+ #   for line in arquivo:
+#      lista.append(line)
+#
+ #   arquivo.close()
+ #   for i in lista:
+ #       funcionario = i.split(',')
+ #       if funcionario[0] == login and funcionario[2] == senha:
+ #         if funcionario[3] == 1:
+#          'tela gerente"
+ #         elif funcionario[3] == 2:
+ #           tela recepcionista
+ #         else:
+ #           tela mecanico
 
 
 def escreverArquivo():

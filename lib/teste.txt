@@ -1,0 +1,24 @@
+funcionario = []
+user = [['igor', '123', "1"]]
+funcionario.append(str(input("digite seu username")))
+funcionario.append(str(input("digite sua senha")))
+funcionario.append(str(input("digite seu cargo")))
+user.append(funcionario)
+print(funcionario)
+print(user)
+print(len(user))
+while True:
+    login = str(input("Digite SEU USER NAME"))
+    senha = str(input("digite sua senha"))
+    while True:
+        for i in user:
+            if login == i[0] and senha == i[1]:
+                if i[2] == '1':
+                    print("tela gerente")
+                elif i[2] == '2':
+                    print("tela recepcionista")
+                elif i[2]== "3":
+                    print("tela mecanico")
+        else:
+            print("login ou senhas incorretas tente novamente mais tarde")
+            break
