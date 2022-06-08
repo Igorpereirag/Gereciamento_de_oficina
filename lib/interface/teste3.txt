@@ -1,2 +1,2 @@
 for c,m in enumerate(user):
-    print(f"{c + 1}\t -\nome:{user[0]}\t - \t{k[c]}km/l-\t{1000 / k[c]:.2f} Litros\t -\t{1000 / k[c] * 2.25:.2f} R$")
+    print(f"{c + 1}\t -\nome:{user[0]}\t - \tcpf{user[1]}email\t{user[2]} telefone\t -\t{user[3] R$")1

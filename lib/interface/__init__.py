@@ -2,7 +2,7 @@
 def linha(tam=50):
     return '-' * tam
 
-def cabeçalho(msg):
+def cabecalho(msg):
     print(linha())
     print(f'\033[1;93m{msg.center(50)}\033[m'
           )  # alinha a mensagem no meio de 42 caracteres
@@ -74,21 +74,13 @@ def leiaInt(msg):
   return valor
 
   
-#def lerArquivo():
- #   arquivo = open('save.txt', 'r', encoding="utf8")
- #   for line in arquivo:
-#      lista.append(line)
-#
- #   arquivo.close()
- #   for i in lista:
- #       funcionario = i.split(',')
- #       if funcionario[0] == login and funcionario[2] == senha:
- #         if funcionario[3] == 1:
-#          'tela gerente"
- #         elif funcionario[3] == 2:
- #           tela recepcionista
- #         else:
- #           tela mecanico
+def lerArquivo():
+   arquivo = open('save.txt', 'r', encoding="utf8")
+   for line in arquivo:
+    lista.append(line)
+
+   arquivo.close()
+ 
 
 
 def escreverArquivo():
