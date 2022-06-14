@@ -1,2 +1,0 @@
-for c,m in enumerate(user):
-    print(f"{c + 1}\t -\nome:{user[0]}\t - \tcpf{user[1]}email\t{user[2]} telefone\t -\t{user[3] R$")1
