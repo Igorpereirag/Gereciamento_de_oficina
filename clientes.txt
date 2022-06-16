@@ -1,2 +1,3 @@
-victor, 123456789, @gmail, 3757916, Rua Nova, a1a2a3
-nome, 12354, dasda@dadsa.com, 456745, rua etc, 4564
+Samara, 01010101, samara@gmail.com, 75757575, Rua Samara, S1S2S3
+Icaro, 02020202, icaro@senai.com, 757575, Rua Icaro, I1I2I3
+bruno, 03030303, bruno@gmail.com, 757575, Rua Bruno, B1B2B3
