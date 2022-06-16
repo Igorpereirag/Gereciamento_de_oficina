@@ -116,7 +116,7 @@ def escreverNovoOrcamento(lista_Orcamento):
     arquivo.close()
 
 def escreverNovaOrdem(item):
-    func = item[0] + ", " + item[1] + ", " + item[2] + ", " + item[3] + "\n"
+    func = item[0] + ", " + item[1] + ", " + item[2] + ", " + item[3] + "   :::::PENDENTE:::::\n"
     arquivo = open('ordens.txt', 'a', encoding="utf8")
     arquivo.writelines(func)
     arquivo.close()
@@ -134,7 +134,7 @@ def deletarOrdem(numero, lista_ordens):
                 arquivo.write(func)
 
 def escreverOrdemConcluida(item):
-    func = ":::::CONCLUÍDA:::::" + item[0] + ", " + item[1] + ", " + item[2] + ", " + item[3] + "\n"
+    func = item[0] + ", " + item[1] + ", " + item[2] + ", " + item[3] + "   :::::CONCLUÍDA:::::\n"
     arquivo = open('ordens.txt', 'a', encoding="utf8")
     arquivo.writelines(func)
     arquivo.close()
