@@ -1,6 +1,1 @@
-00000000, 141414, 8000, trocar vidro
-01010101, 131313, 700, trocar de peça
-02020202, 131313, 1500, trocar parabrisa
-03030303, 131313, 7000, pintura
-:::::CONCLUÍDA:::::01010101, 131313, 700, troca de peça
-987654321, 131313, 800, Peças do motor
+001, 2020, 700,00, trocar peças  -  :::::PENDENTE:::::
